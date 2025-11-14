@@ -1,0 +1,12 @@
+-- Crear vista para ver el resumen de las consultas
+CREATE VIEW VistaResumenConsultas AS
+SELECT 
+  c.ConsultaID,
+  p.Nombre + ' ' + p.Apellido AS Paciente,
+  pr.Nombre + ' ' + pr.Apellido AS PersonalAtiende,
+  pr.Rol,
+  c.FechaConsulta,
+  c.Motivo
+FROM Consulta c
+JOIN Paciente p ON c.PacienteID = p.PacienteID
+JOIN Personal pr ON c.PersonalID = pr.PersonalID;

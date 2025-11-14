@@ -1,0 +1,9 @@
+-- Creacion de la tabla Paciente
+CREATE TABLE Paciente (
+  PacienteID INT PRIMARY KEY,
+  Nombre VARCHAR(50) NOT NULL,
+  Apellido VARCHAR(50) NOT NULL,
+  FechaNacimiento DATE NOT NULL,
+  Sexo VARCHAR(10),
+  Email VARCHAR(100)
+);

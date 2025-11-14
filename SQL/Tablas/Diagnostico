@@ -1,0 +1,7 @@
+-- Crear tabla Diagnostico con consulta a tabla Consulta en ConsultaID
+CREATE TABLE Diagnostico (
+  DiagnosticoID INT PRIMARY KEY,
+  ConsultaID INT NOT NULL,
+  Descripcion VARCHAR(200) NOT NULL,
+  FOREIGN KEY (ConsultaID) REFERENCES Consulta(ConsultaID)
+);

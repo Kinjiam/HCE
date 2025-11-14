@@ -1,0 +1,6 @@
+-- Datos prueba en la tabla Diagnostico
+INSERT INTO Diagnostico (DiagnosticoID, ConsultaID, Descripcion)
+VALUES 
+(1, 1, 'Gastritis aguda'),
+(2, 2, 'Paciente en buen estado general'),
+(3, 3, 'Recuperación favorable sin signos de infección'); 

@@ -1,0 +1,10 @@
+-- Crear tabla Consulta
+CREATE TABLE Consulta (
+  ConsultaID INT PRIMARY KEY,
+  PacienteID INT NOT NULL,
+  PersonalID INT NOT NULL, -- Referencia al personal que atendió
+  FechaConsulta DATE NOT NULL,
+  Motivo VARCHAR(100),
+  FOREIGN KEY (PacienteID) REFERENCES Paciente(PacienteID),
+  FOREIGN KEY (PersonalID) REFERENCES Personal(PersonalID)
+);

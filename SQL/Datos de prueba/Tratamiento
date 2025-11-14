@@ -1,0 +1,5 @@
+-- Datos prueba en la tabla Tratamiento
+INSERT INTO Tratamiento (TratamientoID, ConsultaID, Medicamento, DuracionDias)
+VALUES 
+(1, 1, 'Omeprazol 20mg', 14),
+(2, 3, 'Ibuprofeno 400mg', 5);

@@ -1,0 +1,10 @@
+-- Crear vista para ver las consultas de personal
+CREATE VIEW VistaConsultasPorPersonal AS
+SELECT 
+  pr.PersonalID,
+  pr.Nombre + ' ' + pr.Apellido AS NombreCompleto,
+  pr.Rol,
+  COUNT(c.ConsultaID) AS TotalConsultas
+FROM Personal pr
+LEFT JOIN Consulta c ON pr.PersonalID = c.PersonalID
+GROUP BY pr.PersonalID, pr.Nombre, pr.Apellido, pr.Rol;

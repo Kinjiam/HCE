@@ -1,0 +1,6 @@
+-- Datos de prueba para tabla Paciente
+INSERT INTO Paciente (PacienteID, Nombre, Apellido, FechaNacimiento, Sexo, Email)
+VALUES 
+(1, 'Ana', 'Gómez', '1990-05-12', 'Femenino', 'ana.gomez@example.com'),
+(2, 'Luis', 'Martínez', '1985-11-03', 'Masculino', 'luis.martinez@example.com'),
+(3, 'María', 'López', '2000-08-25', 'Femenino', 'maria.lopez@example.com');

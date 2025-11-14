@@ -1,0 +1,14 @@
+-- Crear vista para ver el historial del paciente 
+CREATE VIEW VistaHistorialPaciente AS
+SELECT 
+  p.PacienteID,
+  p.Nombre + ' ' + p.Apellido AS NombreCompleto,
+  c.FechaConsulta,
+  c.Motivo,
+  d.Descripcion AS Diagnostico,
+  t.Medicamento,
+  t.DuracionDias
+FROM Paciente p
+JOIN Consulta c ON p.PacienteID = c.PacienteID
+LEFT JOIN Diagnostico d ON c.ConsultaID = d.ConsultaID
+LEFT JOIN Tratamiento t ON c.ConsultaID = t.ConsultaID;

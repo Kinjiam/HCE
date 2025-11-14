@@ -1,0 +1,6 @@
+-- Insertar datos de prueba en la tabla Consulta
+INSERT INTO Consulta (ConsultaID, PacienteID, PersonalID, FechaConsulta, Motivo)
+VALUES 
+(1, 1, 1, '2025-11-10', 'Dolor abdominal'),
+(2, 2, 1, '2025-11-11', 'Chequeo general'),
+(3, 3, 2, '2025-11-12', 'Control postoperatorio');

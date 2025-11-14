@@ -1,0 +1,6 @@
+-- Prueba para el procedimiento de registrar una nueva consulta
+EXEC RegistrarConsulta 
+  @PacienteID = 1, 
+  @PersonalID = 1, 
+  @FechaConsulta = '2025-11-14', 
+  @Motivo = 'Control de presión arterial';

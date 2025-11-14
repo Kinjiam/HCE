@@ -1,0 +1,2 @@
+-- Prueba para el procedimiento para mostrar consultas registradas por fecha específica
+EXEC ConsultasPorFecha @Fecha = '2025-11-10';

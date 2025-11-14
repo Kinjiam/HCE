@@ -1,0 +1,9 @@
+-- Crear funcion para saber la ultima consulta por paciente
+CREATE FUNCTION dbo.UltimaConsultaPorPaciente (@PacienteID INT)
+RETURNS DATE
+AS
+BEGIN
+    DECLARE @Ultima DATE;
+    SELECT @Ultima = MAX(FechaConsulta) FROM Consulta WHERE PacienteID = @PacienteID;
+    RETURN @Ultima;
+END;

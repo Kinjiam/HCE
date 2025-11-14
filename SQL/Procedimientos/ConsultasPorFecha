@@ -1,0 +1,16 @@
+-- Devuelve todas las consultas registradas en una fecha específica
+CREATE PROCEDURE ConsultasPorFecha
+  @Fecha DATE
+AS
+BEGIN
+  SELECT 
+    c.ConsultaID,
+    p.Nombre + ' ' + p.Apellido AS Paciente,
+    pr.Nombre + ' ' + pr.Apellido AS PersonalAtiende,
+    pr.Rol,
+    c.Motivo
+  FROM Consulta c
+  JOIN Paciente p ON c.PacienteID = p.PacienteID
+  JOIN Personal pr ON c.PersonalID = pr.PersonalID
+  WHERE c.FechaConsulta = @Fecha;
+END;

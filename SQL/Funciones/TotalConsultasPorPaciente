@@ -1,0 +1,9 @@
+-- Crear funcion para calcular el total de consultas por paciente
+CREATE FUNCTION dbo.TotalConsultasPorPaciente (@PacienteID INT)
+RETURNS INT
+AS
+BEGIN
+    DECLARE @Total INT;
+    SELECT @Total = COUNT(*) FROM Consulta WHERE PacienteID = @PacienteID;
+    RETURN @Total;
+END;

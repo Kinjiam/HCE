@@ -1,0 +1,10 @@
+-- Registrar una nueva consulta médica con paciente, personal y motivo
+CREATE PROCEDURE RegistrarConsulta
+  @PacienteID INT,
+  @PersonalID INT,
+  @FechaConsulta DATE,
+  @Motivo VARCHAR(100)
+AS
+BEGIN
+  INSERT INTO Consulta (PacienteID, PersonalID, FechaConsulta, Motivo)
+  VALUES (@PacienteID, @PersonalID, @FechaConsulta, @Motivo);

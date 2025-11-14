@@ -1,0 +1,6 @@
+-- Insertar datos de prueba en la tabla Personal
+INSERT INTO Personal (PersonalID, Nombre, Apellido, Rol, Especialidad, Email)
+VALUES 
+(1, 'Carlos', 'Ramírez', 'Médico', 'Medicina Interna', 'carlos.ramirez@hospital.com'),
+(2, 'Elena', 'Torres', 'Enfermera', NULL, 'elena.torres@hospital.com'),
+(3, 'Jorge', 'Santos', 'Farmacéutico', NULL, 'jorge.santos@hospital.com');

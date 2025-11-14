@@ -1,0 +1,9 @@
+-- Creacion tabla Personal para identificar el rol de cada persona
+CREATE TABLE Personal (
+  PersonalID INT PRIMARY KEY,
+  Nombre VARCHAR(50) NOT NULL,
+  Apellido VARCHAR(50) NOT NULL,
+  Rol VARCHAR(30) NOT NULL, -- Ej: Médico, Enfermero, Farmacéutico, Administrativo
+  Especialidad VARCHAR(50), -- Para médicos o técnicos
+  Email VARCHAR(100)
+);

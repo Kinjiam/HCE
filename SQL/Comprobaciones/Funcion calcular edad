@@ -1,0 +1,2 @@
+-- Prueba funcion para calcular edad
+SELECT dbo.CalcularEdad('1990-05-12') AS EdadAna;

@@ -1,0 +1,2 @@
+-- Probar funcion para calcular el total de consultas por paciente
+SELECT dbo.TotalConsultasPorPaciente(1) AS ConsultasAna;

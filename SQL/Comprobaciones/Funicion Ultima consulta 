@@ -1,0 +1,2 @@
+-- Probar funcion para saber la ultima consulta por paciente
+SELECT dbo.UltimaConsultaPorPaciente(1) AS UltimaConsultaAna;

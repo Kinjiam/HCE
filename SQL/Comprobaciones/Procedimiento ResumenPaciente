@@ -1,0 +1,2 @@
+-- Prueba para el procedimiento para mostrar el historial completo de un paciente
+EXEC ResumenPaciente @PacienteID = 1;

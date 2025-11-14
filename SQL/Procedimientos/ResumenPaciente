@@ -1,0 +1,18 @@
+-- Devuelve el historial clínico completo de un paciente
+CREATE PROCEDURE ResumenPaciente
+  @PacienteID INT
+AS
+BEGIN
+  SELECT 
+    p.Nombre + ' ' + p.Apellido AS NombreCompleto,
+    c.FechaConsulta,
+    c.Motivo,
+    d.Descripcion AS Diagnostico,
+    t.Medicamento,
+    t.DuracionDias
+  FROM Paciente p
+  JOIN Consulta c ON p.PacienteID = c.PacienteID
+  LEFT JOIN Diagnostico d ON c.ConsultaID = d.ConsultaID
+  LEFT JOIN Tratamiento t ON c.ConsultaID = t.ConsultaID
+  WHERE p.PacienteID = @PacienteID;
+END;
