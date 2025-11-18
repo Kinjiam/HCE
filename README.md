@@ -18,6 +18,13 @@ HCE/
 │   ├── Datos de prueba/     # Scripts de inserción de datos
 │   └── Comprobaciones/      # Scripts de prueba y validación
 └── Docs/                    # Documentación
+    ├── Comprobaciones/      # Capturas de pantalla de scrptis de prueba y validación
+    ├── Datos de prueba/     # Capturas de pantalla de scripts de inserción de datos
+    ├── EDR/                 # Imagen de diagrama EDR
+    ├── Funciones/           # Capturas de pantalla de funciones SQL reutilizables
+    ├── Procedimientos/      # Capturas de pantalla de procedimientos almacenados
+    ├── Tablas/              # Capturas de pantalla del codigo de las tablas base
+    └── Vistas/              # Capturas de pantalla de las vistas de datros
 
 ```
 
